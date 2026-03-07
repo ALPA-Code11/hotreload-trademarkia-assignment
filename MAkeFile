@@ -1,0 +1,9 @@
+
+# Run the hotreloader demo
+run:
+	go run . --root ./testserver --build "go build -o server.exe ./testserver/main.go" --exec ".\server.exe"
+
+# Clean build artifacts
+clean:
+	rm -f server.exe
+	rm -f server-app.exe
